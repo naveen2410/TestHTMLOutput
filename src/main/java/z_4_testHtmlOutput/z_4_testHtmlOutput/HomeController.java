@@ -52,6 +52,6 @@ public class HomeController {
 	  @GetMapping("/customer")
 	    public String getCustomer(Model model) {
 	        model.addAttribute("customers", lstCustomers);
-	        return "customer/customer.table.html";
+	        return "customer/customer.table";
 	    }
 }
