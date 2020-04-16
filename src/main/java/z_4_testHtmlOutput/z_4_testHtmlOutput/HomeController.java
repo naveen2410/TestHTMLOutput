@@ -46,12 +46,12 @@ public class HomeController {
 	 
 	  @GetMapping
 	  public String index() {
-	    return "redirect:/login";
+	    return "redirect:/customer";
 	  }
 	  
 	  @GetMapping("/customer")
 	    public String getCustomer(Model model) {
 	        model.addAttribute("customers", lstCustomers);
-	        return "customer/customer.table";
+	        return "customer/display";
 	    }
 }
